@@ -25,19 +25,42 @@ export default function App() {
   // }
 
   const handlePredict = async () => {
-    if (!imageFile) return
-    setError(null)
-    setLoading(true)
-    try {
-      const res = await predictEmotion(imageFile)
-      setResult(res)
-    } catch (e) {
-      setError(e.message || 'Prediction failed')
+  if (!imageFile) return
+  setError(null)
+  setLoading(true)
+  try {
+    const res = await predictEmotion(imageFile)
+
+    if (res?.error === "Face not in frame") {
+      alert("⚠️ Face not detected! Please keep your face in frame.")  // <-- Show alert
       setResult(null)
-    } finally {
-      setLoading(false)
+      return
     }
+
+    setResult(res)
+  } catch (e) {
+    setError(e.message || 'Prediction failed')
+    setResult(null)
+  } finally {
+    setLoading(false)
   }
+}
+
+
+  // const handlePredict = async () => {
+  //   if (!imageFile) return
+  //   setError(null)
+  //   setLoading(true)
+  //   try {
+  //     const res = await predictEmotion(imageFile)
+  //     setResult(res)
+  //   } catch (e) {
+  //     setError(e.message || 'Prediction failed')
+  //     setResult(null)
+  //   } finally {
+  //     setLoading(false)
+  //   }
+  // }
 
   // Trigger refresh animation whenever imageFile changes
   useEffect(() => {

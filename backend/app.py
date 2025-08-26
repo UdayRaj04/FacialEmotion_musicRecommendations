@@ -41,15 +41,22 @@ def preprocess_image_for_fer(pil_img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.2, minNeighbors=5, minSize=(48,48))
 
+    # if len(faces) == 0:
+    #     h, w = gray.shape
+    #     size = min(h, w)
+    #     y0 = (h - size)//2
+    #     x0 = (w - size)//2
+    #     face_roi = gray[y0:y0+size, x0:x0+size]
+    # else:
+    #     x, y, w, h = sorted(faces, key=lambda b: b[2]*b[3], reverse=True)[0]
+    #     face_roi = gray[y:y+h, x:x+w]
+
     if len(faces) == 0:
-        h, w = gray.shape
-        size = min(h, w)
-        y0 = (h - size)//2
-        x0 = (w - size)//2
-        face_roi = gray[y0:y0+size, x0:x0+size]
-    else:
-        x, y, w, h = sorted(faces, key=lambda b: b[2]*b[3], reverse=True)[0]
-        face_roi = gray[y:y+h, x:x+w]
+        return None  # No face found
+
+    # Pick largest face
+    x, y, w, h = sorted(faces, key=lambda b: b[2]*b[3], reverse=True)[0]
+    face_roi = gray[y:y+h, x:x+w]
 
     face_roi = cv2.resize(face_roi, (48,48), interpolation=cv2.INTER_AREA)
     face_roi = face_roi.astype("float32") / 255.0
@@ -70,6 +77,10 @@ def predict():
         img_bytes = file.read()
         pil_img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
         x = preprocess_image_for_fer(pil_img)
+
+        if x is None:
+            return jsonify({"error": "Face not in frame"}), 400
+
         model = load_emotion_model()
         probs = model.predict(x, verbose=0)[0]
         best_idx = int(np.argmax(probs))
@@ -81,6 +92,25 @@ def predict():
         return jsonify({"error": str(e)}), 500
     except Exception as e:
         return jsonify({"error": f"Unexpected error: {e}"}), 500
+# def predict():
+#     try:
+#         if "image" not in request.files:
+#             return jsonify({"error": "No image file (field name 'image')."}), 400
+#         file = request.files["image"]
+#         img_bytes = file.read()
+#         pil_img = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+#         x = preprocess_image_for_fer(pil_img)
+#         model = load_emotion_model()
+#         probs = model.predict(x, verbose=0)[0]
+#         best_idx = int(np.argmax(probs))
+#         return jsonify({
+#             "emotion": EMOTIONS[best_idx],
+#             "scores": {EMOTIONS[i]: float(probs[i]) for i in range(len(EMOTIONS))}
+#         })
+#     except (FileNotFoundError, RuntimeError) as e:
+#         return jsonify({"error": str(e)}), 500
+#     except Exception as e:
+#         return jsonify({"error": f"Unexpected error: {e}"}), 500
 
 def load_emotion_map():
     with open(os.path.join(os.path.dirname(__file__), "emotion_map.json"), "r", encoding="utf-8") as f:

@@ -2,7 +2,8 @@
 
 - Frontend: React (Vite)
 - Backend: Flask (Python) + TensorFlow/Keras + OpenCV
-- Dataset: Kaggle – Face Expression Recognition Dataset (FER) https://www.kaggle.com/datasets/jonathanoheix/face-expression-recognition-dataset
+- Dataset: Kaggle – Face Expression Recognition Dataset (FER) https://www.kaggle.com/datasets/jonathanoheix/
+- Add DATASET - in backend/data/train/{angry,disgust,fear,happy,sad,surprise,neutral}/*.pngface-expression-recognition-dataset
 
 ## Quickstart
 ### Backend

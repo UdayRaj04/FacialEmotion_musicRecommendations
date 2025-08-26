@@ -1,0 +1,115 @@
+{
+  "angry": {
+    "youtube": [
+      { "title": "Relaxing Piano for Anger Relief", "youtubeId": "1ZYbU82GVz4" },
+      { "title": "Chillhop - Calm Beats", "youtubeId": "5yx6BWlEVcY" },
+      { "title": "Bollywood Relax Mix", "youtubeId": "c9EJtWw8z0U" },
+      { "title": "Arijit Singh - Calm Songs", "youtubeId": "xRbPAVnqtcs" },
+      { "title": "Bhojpuri Sad Songs Mix", "youtubeId": "3PYCr7y8F0o" }
+    ],
+    "spotify": [
+      { "title": "Peaceful Piano", "spotifyUri": "spotify:playlist:37i9dQZF1DX4sWSpwq3LiO" },
+      { "title": "Lo-Fi Beats", "spotifyUri": "spotify:playlist:37i9dQZF1DXc8kgYqqlMhw" },
+      { "title": "Bollywood Acoustic", "spotifyUri": "spotify:playlist:37i9dQZF1DXd0X3z9R9ZpD" },
+      { "title": "Relaxing Hindi Songs", "spotifyUri": "spotify:playlist:37i9dQZF1DWYkaDif7Ztbp" },
+      { "title": "Bhojpuri Sad Hits", "spotifyUri": "spotify:playlist:37i9dQZF1DX8h2FYjhGZCN" }
+    ]
+  },
+  "disgust": {
+    "youtube": [
+      { "title": "Ambient Study Music", "youtubeId": "wpqT7vNDMfc" },
+      { "title": "Deep Focus", "youtubeId": "FtmQju-Pq9g" },
+      { "title": "Peaceful Bollywood Instrumentals", "youtubeId": "9uYwG44W2p8" },
+      { "title": "Hindi Meditation Music", "youtubeId": "uk2l-vqO1sE" },
+      { "title": "Bhojpuri Old Melodies", "youtubeId": "D1F3R3cQ4A0" }
+    ],
+    "spotify": [
+      { "title": "Deep Focus", "spotifyUri": "spotify:playlist:37i9dQZF1DWZeKCadgRdKQ" },
+      { "title": "Focus Flow", "spotifyUri": "spotify:playlist:37i9dQZF1DXc2aPBXGmXrt" },
+      { "title": "Bollywood Instrumentals", "spotifyUri": "spotify:playlist:37i9dQZF1DWUhI3KLO9UlN" },
+      { "title": "Calm Hindi Songs", "spotifyUri": "spotify:playlist:37i9dQZF1DX2JYVqUCzWWD" },
+      { "title": "Bhojpuri Classics", "spotifyUri": "spotify:playlist:37i9dQZF1DWTUxzqfkmvTX" }
+    ]
+  },
+  "fear": {
+    "youtube": [
+      { "title": "Comfort & Uplift", "youtubeId": "lFcSrYw-ARY" },
+      { "title": "Calm Your Mind", "youtubeId": "DWcJFNfaw9c" },
+      { "title": "Motivational Bollywood Songs", "youtubeId": "cNw8A5pwbVI" },
+      { "title": "Hindi Inspirational Mix", "youtubeId": "kffacxfA7G4" },
+      { "title": "Bhojpuri Motivational Mix", "youtubeId": "8sULYQqj6mU" }
+    ],
+    "spotify": [
+      { "title": "Songs to Sing in the Shower", "spotifyUri": "spotify:playlist:37i9dQZF1DWSqmBTGDYngZ" },
+      { "title": "Confidence Boost", "spotifyUri": "spotify:playlist:37i9dQZF1DX4fpCWaHOned" },
+      { "title": "Bollywood Motivation", "spotifyUri": "spotify:playlist:37i9dQZF1DX7Jl5KP2eZaS" },
+      { "title": "Hindi Workout Hits", "spotifyUri": "spotify:playlist:37i9dQZF1DWUbBVsfdghT7" },
+      { "title": "Bhojpuri Power Songs", "spotifyUri": "spotify:playlist:37i9dQZF1DWSgfkepJuQkj" }
+    ]
+  },
+  "happy": {
+    "youtube": [
+      { "title": "Good Vibes Only", "youtubeId": "f02mOEt11OQ" },
+      { "title": "Feel Good Indie", "youtubeId": "gWcF6P9Vxzs" },
+      { "title": "Bollywood Party Hits", "youtubeId": "lY2yjAdbvdQ" },
+      { "title": "Top Hindi Dance Songs", "youtubeId": "a0Yd4f30Mhw" },
+      { "title": "Bhojpuri Superhits", "youtubeId": "w7x9cB6oZqU" }
+    ],
+    "spotify": [
+      { "title": "Feel Good Friday", "spotifyUri": "spotify:playlist:37i9dQZF1DXdPec7aLTmlC" },
+      { "title": "Happy Hits!", "spotifyUri": "spotify:playlist:37i9dQZF1DXdPec7aLTmlC" },
+      { "title": "Bollywood Dance Hits", "spotifyUri": "spotify:playlist:37i9dQZF1DWX4NtIvmxi65" },
+      { "title": "Hindi Top 50", "spotifyUri": "spotify:playlist:37i9dQZF1DWU13kKnk03AP" },
+      { "title": "Bhojpuri Party Mix", "spotifyUri": "spotify:playlist:37i9dQZF1DX7qRKBHjmYjY" }
+    ]
+  },
+  "sad": {
+    "youtube": [
+      { "title": "Cheer Up Mix", "youtubeId": "p2H7r8r7Ruo" },
+      { "title": "Upbeat Pop", "youtubeId": "9m0Wb9G9Zxw" },
+      { "title": "Bollywood Sad Songs", "youtubeId": "hY0lZcWc5qE" },
+      { "title": "Arijit Singh Sad Mix", "youtubeId": "yBkRRtOn0R0" },
+      { "title": "Bhojpuri Sad Songs", "youtubeId": "OUnW3LsmU8Q" }
+    ],
+    "spotify": [
+      { "title": "Life Sucks", "spotifyUri": "spotify:playlist:37i9dQZF1DX7gIoKXt0gmx" },
+      { "title": "Feelin' Good", "spotifyUri": "spotify:playlist:37i9dQZF1DX1g0iEXLFycr" },
+      { "title": "Bollywood Sad Songs", "spotifyUri": "spotify:playlist:37i9dQZF1DXdpF2suW27SP" },
+      { "title": "Hindi Heartbreak Hits", "spotifyUri": "spotify:playlist:37i9dQZF1DX3oM43CtKnRV" },
+      { "title": "Bhojpuri Sad Vibes", "spotifyUri": "spotify:playlist:37i9dQZF1DX2rVuvy6F3N4" }
+    ]
+  },
+  "surprise": {
+    "youtube": [
+      { "title": "Discover Weekly Vibes", "youtubeId": "tNkZsRW7h2c" },
+      { "title": "Eclectic Mix", "youtubeId": "c7rCyll5AeY" },
+      { "title": "Bollywood Mashup Mix", "youtubeId": "1Dk1dR6iH_c" },
+      { "title": "Hindi Surprising Hits", "youtubeId": "tbn6kAAw2J8" },
+      { "title": "Bhojpuri Mix 2024", "youtubeId": "n6lI7I3k6cM" }
+    ],
+    "spotify": [
+      { "title": "Pollen", "spotifyUri": "spotify:playlist:37i9dQZF1DWWBHeXOYZf74" },
+      { "title": "All New Music Friday", "spotifyUri": "spotify:playlist:37i9dQZF1DX4JAvHpjipBk" },
+      { "title": "Bollywood Remixes", "spotifyUri": "spotify:playlist:37i9dQZF1DX4yeAbd6M7hG" },
+      { "title": "Hindi Surprise Mix", "spotifyUri": "spotify:playlist:37i9dQZF1DX2RxBh64BHjQ" },
+      { "title": "Bhojpuri Trending Now", "spotifyUri": "spotify:playlist:37i9dQZF1DWXUg9LmRm4Tn" }
+    ]
+  },
+  "neutral": {
+    "youtube": [
+      { "title": "Lo-Fi Beats", "youtubeId": "jfKfPfyJRdk" },
+      { "title": "Coding Music", "youtubeId": "2YllipGl0aU" },
+      { "title": "Bollywood Chill Mix", "youtubeId": "A9y4P9PbA6Y" },
+      { "title": "Hindi Soft Songs", "youtubeId": "4aQDOUbErNg" },
+      { "title": "Bhojpuri Chill Songs", "youtubeId": "4s2MzTPEKfU" }
+    ],
+    "spotify": [
+      { "title": "Lo-Fi Beats", "spotifyUri": "spotify:playlist:37i9dQZF1DXd9rSDyQguIk" },
+      { "title": "Chill Vibes", "spotifyUri": "spotify:playlist:37i9dQZF1DX889U0CL85jj" },
+      { "title": "Bollywood Chill", "spotifyUri": "spotify:playlist:37i9dQZF1DWUw3MZ6g9g6t" },
+      { "title": "Hindi Relaxation Mix", "spotifyUri": "spotify:playlist:37i9dQZF1DX9qNs32fujYe" },
+      { "title": "Bhojpuri Chill Hits", "spotifyUri": "spotify:playlist:37i9dQZF1DX4Y2WcSoqJqb" }
+    ]
+  }
+}
+
